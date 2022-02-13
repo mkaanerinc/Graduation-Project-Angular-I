@@ -1,0 +1,98 @@
+<div class="container mt-5 px-5">
+  <div class="mb-4">
+    <h2>Ödeme Ekranı</h2>
+    <span
+      >Lütfen ödemeyi yapın, bundan sonra tüm özelliklerden ve avantajlardan
+      yararlanabilirsiniz.</span
+    >
+  </div>
+  <form [formGroup]="paymentAddForm">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card p-3">
+          <h6 class="text-uppercase">Ödeme Detayı</h6>
+          <div class="inputbox mt-3">
+            <input
+              type="text"
+              id="paymentCardName"
+              formControlName="paymentCardName"
+              name="name"
+              autocomplete="disabled"
+              class="form-control"
+            />
+            <span>Kartın üstündeki isim</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="inputbox mt-3 mr-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="paymentCardNo"
+                  formControlName="paymentCardNo"
+                  autocomplete="disabled"
+                />
+                <span>Kart Numarası</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+                <div class="inputbox mt-3 mr-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="paymentCardExpiry"
+                    formControlName="paymentCardExpiry"
+                    autocomplete="disabled"
+                  />
+                  <span>Son Kullanım Tarihi</span>
+                </div>
+                <div class="inputbox mt-3 mr-2">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="paymentCardCVV"
+                    formControlName="paymentCardCVV"
+                    autocomplete="disabled"
+                  />
+                  <span>CVV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 mb-4 d-flex justify-content-between">
+          <span
+            ><button class="btn btn-primary px-3" (click)="prevPage()">
+              Pirim Bilgisi Ekranına Geri Dön
+            </button></span
+          >
+          <button class="btn btn-success px-3" (click)="complete()">
+            Ödemeyi Gerçekleştir
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-blue p-3 text-white mb-3">
+          <span>Ödenecek Fiyat</span>
+          <div class="d-flex flex-row align-items-end mb-3">
+            <h1 class="mb-0 yellow">{{ price }}</h1>
+            <span>.00</span>
+            <h1>TL</h1>
+          </div>
+          <span
+            >Ödemeyi tamamladıktan sonra tüm özelliklerin ve avantajların
+            keyfini çıkarın</span
+          >
+          <div class="hightlight">
+            <span
+              >Önümüzdeki 1 yıl için %100 Garantili destek ve güncelleme.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

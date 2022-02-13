@@ -1,0 +1,56 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card" style="width: 45rem">
+      <div class="card-header text-center">
+        <h5 class="title">Paket Seçimi</h5>
+      </div>
+      <div class="card-body col-md-12 col-sm-6 text-center">
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.productName }}</td>
+              <td>{{ product.productPrice }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <form [formGroup]="productAddForm">
+          <div class="row mb-3">
+            <div class="form-group col-md-6">
+              <select
+                class="form-select"
+                id="productName"
+                formControlName="productName"
+              >
+                <option value="" selected disabled hidden>Paket Seçiniz</option>
+                <option *ngFor="let productChoose of products">
+                  {{ productChoose.productName }}
+                </option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <select
+                class="form-select"
+                id="installmentOptionName"
+                formControlName="installmentOptionName"
+              >
+                <option value="" selected disabled hidden>
+                  Taksit Seçiniz
+                </option>
+                <option *ngFor="let insatllmentOption of installmentOptions">
+                  {{ insatllmentOption.installmentOptionName }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-center">
+        <div class="d-grid">
+          <button class="btn btn-primary btn-lg" (click)="nextPage()">
+            Pirim Bilgisine Geç
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
