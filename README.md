@@ -1,4 +1,29 @@
-# GraduationProjectI
+#### 📬 Find me at
+[![Github Badge](http://img.shields.io/badge/-Github-black?style=flat&logo=github&link=https://github.com/mkaanerinc/)](https://github.com/mkaanerinc/) 
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mkaanerinc/)](https://www.linkedin.com/in/mkaanerinc)
+[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/mkaanerinc)](https://www.hackerrank.com/mkaanerinc)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat&logo=Gmail&logoColor=white&link=mailto:mkaanerinc@gmail.com)](mailto:mkaanerinc@gmail.com)
+
+<br />
+<p align="center">
+  <h2 align="center">Bupa Acıbadem Sigorta FullStack Bootcamp - Patika.dev</h2>
+  <p align="center">
+    Graduation Project I with Angular.
+    <br />
+    <br />
+  </p>
+</p>
+
+# About The Project
+
+## Built With
+
+  ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)&nbsp;
+  ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?&style=flat&logo=css3&logoColor=white)&nbsp;
+  ![TypeScript](https://img.shields.io/badge/Typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)&nbsp;
+  ![Angular](https://img.shields.io/badge/Angular-%23DD0031.svg?style=flat&logo=angular&logoColor=white)&nbsp;
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white)&nbsp;
+  ![VSCode](https://img.shields.io/badge/VSCODE-007ACC.svg?&style=flat&logo=visual-studio-code)&nbsp;
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
@@ -13,14 +38,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
